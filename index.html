@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h1>Contact Us</h1>
+            <p>Need help? Our support team are here to answer all your questions.</p>
+            <p><strong>Email:</strong> info@email.com</p>
+            <p><strong>Phone:</strong> 1.800.000.000</p>
+            <p><strong>Address:</strong> 123 Acme Street</p>
+        </div>
+        <form class="contact-form" onsubmit="submitForm(event)">
+            <div class="form-group">
+                <label for="first-name">First Name*</label>
+                <input type="text" id="first-name" name="first-name" placeholder="first name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="last name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject*</label>
+                <input type="text" id="subject" name="subject" placeholder="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message*</label>
+                <textarea id="message" name="message" rows="4"placeholder="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
